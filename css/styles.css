@@ -1,0 +1,419 @@
+/*colores
+black 000
+gold #f7d547
+aliceblue #f0f8ff
+fuente
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+/* HEADER aca mas alla de los atributos que le di agregue el position relative que fue de lo ultimo que vimos. para mover con un gap la barra de busqueda que esta a la derecha del header */
+header {
+    color: #f0f8ff;
+    list-style: none;
+    text-align: center;
+    background-position-y: center;
+    background-size: 100%;
+    background-image: url(../assets/Fondos/lujoso-fondo-marco-dorado-brillante_23-2148239824.webp);
+}
+
+/* Este es el titulo de la web */
+.titulo-casa {
+    font-size: 80px;
+    letter-spacing: 20px;
+    font-weight: 100;
+    text-shadow: 2px 2px 2px grey;
+}
+
+/* aca esta la clase de la barra buscadora */
+.inputSearch {
+    display: flex;
+    height: 30px;
+    justify-content: end;
+    margin: 20px 10px;
+}
+
+.inputSearch input {
+    border-radius: 10%;
+}
+
+.inputSearch label {
+    margin: 5px;
+}
+
+/* la navbar tiene imagen de fondo igual que el footer
+un padding para ensanchar los bordes y un flex para separar entre ellos */
+.nav-bar {
+    background-image: url(../assets/Fondos/marmol-negro-textura-fondo-textura-marmol-tailandia-marmol-natural-abstracto-blanco-negro-diseno_1253-917.webp);
+    padding: 20px 12px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px solid #f7d547;
+    border-bottom: 2px solid #f7d547;
+}
+
+a.menu-item {
+    margin-right: 24px;
+    color: #f0f8ff;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+a.menu-item:hover {
+    color: #f7d547;
+}
+
+/* aca agregamos la nav-ham para el sistema mobile */
+.nav-ham {
+    display: none;
+    background-color: black;
+    max-width: 86px;
+}
+
+.nav-ham-container {
+    width: 86px;
+}
+
+.nav-ham input:checked~ul {
+    display: block;
+    border: none;
+    /* visibility: visible; */
+}
+
+.nav-ham input~ul {
+    border: 3px solid gold;
+    /* visibility: hidden; */
+    display: none;
+}
+
+.nav-ham input {
+    display: none;
+}
+
+.nav-ham label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid #f7d547;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+}
+
+.nav-ham ul {
+    position: absolute;
+    background-color: black;
+}
+
+.nav-ham ul li {
+    display: block;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+}
+
+.nav-ham ul a {
+    list-style: none;
+    text-decoration: none;
+    color: #f7d547;
+}
+
+/*  MAIN */
+.productos-de-portada {
+    background-image: url(../assets/Fondos/fondo-geometrico-abstracto-premium-negro-oro_1017-24783.webp);
+    background-size: 100%;
+}
+
+.img-portada {
+    display: flex;
+    padding: 150px;
+    width: 100%;
+    height: 100vh;
+}
+
+.img-portada a img {
+    width: 90%;
+}
+
+.slider-item {
+    border-radius: 20px 50px;
+    padding: 3px;
+    margin: 20px;
+    box-shadow: 10px 10px 3px #f7d547;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    height: 180px;
+    color: #f7d547;
+    text-align: center;
+    background-image: url(../assets/Fondos/marmol-negro-textura-fondo-textura-marmol-tailandia-marmol-natural-abstracto-blanco-negro-diseno_1253-917.webp);
+}
+
+/*QUIENES SOMOS .HTML*/
+.quienes-somos {
+    background-size: 100%;
+    background-image: url(../assets/Fondos/fondo-geometrico-abstracto-premium-negro-oro_1017-24783.webp);
+    color: #f7d547;
+    text-transform: uppercase;
+}
+
+.main-quienes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.main-quienes p {
+    width: 50%;
+    margin: 10px;
+}
+
+.main-quienes video {
+    width: 500px;
+    border-radius: 10%;
+    margin-top: 10px;
+    border: 2px #f7d547;
+    border-style: dotted;
+}
+
+/* PRODUCTOS .HTML */
+.main-productos {
+    background-image: url(../assets/Fondos/fondo-geometrico-abstracto-premium-negro-oro_1017-24783.webp);
+    height: 100vh;
+    background-size: 100%;
+}
+
+button a {
+    text-decoration: none;
+}
+
+.button {
+    background-color: #f7d547;
+    width: 200px;
+    height: 100px;
+    border-radius: 99px 99px 99px 99px;
+    -webkit-border-radius: 99px 99px 99px 99px;
+    -moz-border-radius: 99px 99px 99px 99px;
+}
+
+.div-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 20%;
+}
+
+/* SERVICIOS .HTML */
+.main-servicios {
+    background-image: url(../assets/Fondos/fondo-geometrico-abstracto-premium-negro-oro_1017-24783.webp);
+    background-size: 100%;
+    color: #f7d547;
+}
+
+.section-servicios {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    text-align: center;
+    height: 100vh;
+    
+}
+
+.section-servicios img {
+    width: 180px;
+    height: 180px;
+    border-radius: 20px 50px;
+    padding: 3px;
+    margin: 10px;
+    box-shadow: 10px 10px 3px #f7d547;
+}
+
+/* CONTACTOS .HTML */
+.main-contacto {
+    background-image: url(../assets/Fondos/fondo-geometrico-abstracto-premium-negro-oro_1017-24783.webp);
+    background-size: 100%;
+    height: 100vh;
+
+}
+
+.formulario {
+    padding-top: 100px;
+    color: #f7d547;
+    
+}
+
+.ingreso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    
+}
+
+.ingreso input {
+    text-align: center;
+    height: 30px;
+    width: 240px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+}
+
+.logos img {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    margin: 10px;
+}
+
+.button-form {
+    background-color: #f7d547;
+    width: 50px;
+    height: 20px;
+    border-radius: 99px 99px 99px 99px;
+    -webkit-border-radius: 99px 99px 99px 99px;
+    -moz-border-radius: 99px 99px 99px 99px;
+}
+
+/* BREAK POINTS */
+@media (max-width:768px)and (min-width:320px) {
+    /* HEADER */
+
+    header {
+        height: 180px;
+    }
+
+    .titulo-casa {
+        font-size: 40px;
+        letter-spacing: 4px;
+        padding-top: 50px;
+    }
+
+    .site-logo-img {
+        display: none;
+    }
+
+    .subtitulo {
+        display: none;
+    }
+
+    .inputSearch {
+        display: none;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .nav-ham {
+        display: block;
+        display: flex;
+        margin-top: 40px;
+        color: #f7d547;
+
+    }
+
+    /* MAIN */
+    .img-portada {
+        display: inline;
+        flex-direction: column;
+        padding: 0%;
+    }
+
+    footer {
+        font-size: 20px;
+    }
+
+    /* QUIENES SOMOS HTML */
+    .main-quienes video {
+        width: 250px;
+        margin-top: 100px;
+    }
+/* SERVICIOS HTML */
+    .section-servicios {
+        display: inline;
+        flex-direction: column;
+    }
+}
+@media (max-width:320px) and (min-width:0px) {
+   /* HEADER */
+
+   header {
+ background-repeat: no-repeat;
+}
+
+.titulo-casa {
+    font-size: 10px;
+    letter-spacing: 4px;
+    padding-top: 50px;
+}
+
+.site-logo-img {
+    display: none;
+}
+
+.subtitulo {
+    display: none;
+}
+
+.inputSearch {
+    display: none;
+}
+
+.nav-bar {
+    display: none;
+}
+
+.nav-ham {
+    display: block;
+    display: flex;
+    margin-top: 40px;
+    color: #f7d547;
+
+}
+
+/* MAIN */
+.img-portada {
+    display: inline;
+    flex-direction: column;
+    padding: 0%;
+    
+}
+
+footer {
+    font-size: 20px;
+}
+
+/* QUIENES SOMOS HTML */
+.main-quienes video {
+    width: 250px;
+    margin-top: 100px;
+}
+/* SERVICIOS HTML */
+.section-servicios {
+    padding: 0;
+    flex-direction: column;
+}
+}
+

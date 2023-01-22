@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="SOMOS UNA EMPRESA DEDICADA AL BRONCEADO EN SPRAY.">
+    <meta name="author" content="Luciano Leone">
+    <meta name="copyright" content="CasaNegra">
+    <!-- opengraph -->
+    <meta property="og: title" content="Casa Negra">
+    <meta property="og: description" content="Servicio de bronceado en spray">
+    <meta property="og: image" content="https://lucianofox.000webhostapp.com/assets/hydra.jpg">
+    <meta property="og: url" content="https://lucianofox.000webhostapp.com/">
+    <meta property="locale" content="es_Es">
+    <title>Home | Casa Negra</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="../assets/Sin título.jpg" type="image/x-icon">
+    <!-- En el head agregue el icono que se muestra en las pestañas del explorador(hice un logo pero no llegue a modificar la resolucion) -->
+</head>
+
+<body>
+    <!-- La pagina esta orientada a un producto de cosmetica, principalmente para el bronceado -->
+    <!-- Hice un header con el titulo, el logo y un slogan, le agregue imagenes a los fondos, tiene un fondo para la parte de texto y otro para la nav-bar y un imput con una barra de busqueda -->
+    <header>
+        <div class="site-header">
+            <h1 class="titulo-casa">•CASANEGRA•</h1>
+            <img class="site-logo-img" src="https://litebrush.com.ar/wp-content/uploads/2020/11/logo.png"
+                title="Casa Negra" alt="LiteBrush">
+            <h2 class="subtitulo" type="text">Estetica, calidad y confianza.</h2>
+        </div>
+        <div class="inputSearch">
+            <label for="search"> Buscar: </label>
+            <input id="search" type="search" name="search" placeholder=" Search">
+        </div>
+        <section>
+            <nav class="nav-bar">
+                <a class="menu-item" href="./index.html"><span class="homeHover">Home</span></a>
+                <a class="menu-item" href="./pages/quienes-somos.html"><span>Quienes Somos</span></a>
+                <a class="menu-item" href="./pages/productos.html"><span>Productos</span></a>
+                <a class="menu-item" href="./pages/servicios.html"> <span>Servicios</span></a>
+                <a class="menu-item" href="./pages/contacto.html"><span>Contacto</span></a>
+            </nav>
+        </section>
+        <!-- aca agregamos la nav-ham para el sistema mobile -->
+        <div class="nav-ham">
+            <nav class="nav-ham-container">
+                <input type="checkbox" id="menu">
+                <label for="menu"> ☰ </label>
+                <ul>
+                    <a href="./index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="./pages/quienes-somos.html">
+                        <li>Quienes Somos</li>
+                    </a>
+                    <a href="./pages/productos.html">
+                        <li>Productos</li>
+                    </a>
+                    <a href="./pages/servicios.html">
+                        <li>Servicios</li>
+                    </a>
+                    <a href="./pages/contacto.html">
+                        <li>Contacto</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Este main  destaca los 3 productos principales.  Le cambie los bordes y le agregue unas sombras, que repito en las imagenes del sitio. utilice otra imagen para el fondo. 
+    Y en todos las paginas los main son distintos y tienen distintos atributos en css (trate de ser lo mas ordenado con la maquetacion) -->
+    <main>
+        <div class="productos-de-portada">
+            <div class="img-portada">
+                <a href="https://litebrush.com.ar/product/hydra" target="_blank"><img class="slider-item"
+                        src="./assets/hydra.jpg" alt="crema-hydra"></a>
+                <a href="https://litebrush.com.ar/product/rmove" target="_blank"><img class="slider-item"
+                        src="./assets/rmove.jpg" alt="crema-rmove"></a>
+                <a href="https://litebrush.com.ar/product/xtend" target="_blank"><img class="slider-item"
+                        src="./assets/xtend.jpg" alt="crema-hydra"></a>
+            </div>
+        </div>
+    </main>
+    <!-- el footer simplemente muestra los datos de la casa centrados y alineado exepruando el footer de contactos que lo cambio por la fila de iconos de redes sociales-->
+    <!-- estuve viendo la posibilidad de gregarle una barra con los iconos de las plataformas y redes sociales pero no llegue sera para la proxima -->
+    <footer>
+        <div class="text-footer">
+            <p>
+                <span>CASA NEGRA <br> Adress: Campo Salles 1300 <br> Tel: 45678765</span>
+            </p>
+        </div>
+    </footer>
+</body>
+<!--  -->
+<!--  -->
+
+</html>
