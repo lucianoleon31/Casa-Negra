@@ -1,44 +1,61 @@
+/*  RESETS */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; }
-  
-  body {
-    height: 100vh; }
-  
-  header {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+/* HEADER */
+header {
     color: #f0f8ff;
     list-style: none;
     text-align: center;
     background-position-y: center;
     background-size: 100%;
     background-image: url(../assets/Fondos/lujoso-fondo-marco-dorado-brillante_23-2148239824.webp);
-    font-family: "Cormorant Garamond", serif; }
-  
-  .titulo-casa {
+    font-family: "Cormorant Garamond", serif;
+}
+
+.titulo-casa {
     font-family: "Playfair Display", serif;
     font-size: 80px;
     letter-spacing: 20px;
     font-weight: 100;
-    text-shadow: 2px 2px 2px grey; }
-  
-  .inputSearch {
+    text-shadow: 2px 2px 2px grey;
+    }
+
+/* Barra buscadora e icono */
+
+.inputSearch {
     display: flex;
     justify-content: end;
     height: 30px;
-    margin: 20px 10px; }
-    .inputSearch input {
-      border-radius: 10%; }
-    .inputSearch input::placeholder {
-      font-family: "Cormorant Garamond", serif; }
-    .inputSearch label {
-      margin: 5px;
-      font-family: "Playfair Display", serif; }
-  
-  .search-icon {
-    display: none; }
-  
-  .nav-bar {
+    margin: 20px 10px;
+}
+
+.inputSearch input {
+    border-radius: 10%;
+}
+
+.inputSearch input::placeholder {
+    font-family: "Cormorant Garamond", serif;
+}
+
+.inputSearch label {
+    margin: 5px;
+    font-family: "Playfair Display", serif;
+}
+
+.search-icon {
+    display: none;
+}
+
+/* Nav Bar */
+.nav-bar {
     background-image: url(../assets/Fondos/marmol-negro-textura-fondo-textura-marmol-tailandia-marmol-natural-abstracto-blanco-negro-diseno_1253-917.webp);
     padding: 20px 12px;
     font-size: 20px;
@@ -47,88 +64,108 @@
     justify-content: space-around;
     border-top: 2px solid #f7d547;
     border-bottom: 2px solid #f7d547;
-    text-shadow: 2px 2px 2px grey; }
-  
-  a.menu-item {
+    text-shadow: 2px 2px 2px grey;
+}
+
+a.menu-item {
     margin-right: 24px;
     color: #f0f8ff;
     text-decoration: none;
-    font-weight: 800; }
-    a.menu-item:hover {
-      color: #f7d547; }
-  
-  .nav-ham {
+    font-weight: 800;
+}
+
+a.menu-item:hover {
+    color: #f7d547;
+}
+
+/*  Nav Ham*/
+.nav-ham {
     display: none;
-    max-width: 86px; }
-    .nav-ham input {
-      display: none; }
-      .nav-ham input:checked ~ ul {
-        display: block;
-        border: none; }
-    .nav-ham input ~ ul {
-      border: 3px solid #f7d547;
-      display: none; }
-    .nav-ham label {
-      box-sizing: border-box;
-      display: inline-block;
-      border: 1px solid #f7d547;
-      border-radius: 5px;
-      width: 30px;
-      height: 30px;
-      line-height: 30px;
-      font-weight: bold;
-      text-align: center;
-      user-select: none; }
-    .nav-ham ul {
-      z-index: 2;
-      position: absolute;
-      background-color: black; }
-      .nav-ham ul li {
-        display: block;
-        margin: 0;
-        padding: 10px;
-        list-style: none;
-        border-bottom: 1px solid grey; }
-      .nav-ham ul a {
-        list-style: none;
-        text-decoration: none;
-        color: #f7d547; }
-  
-  .nav-ham-container {
-    width: 86px; }
-  
-  .productos-de-portada {
+    max-width: 86px;
+}
+
+.nav-ham input {
+    display: none;
+}
+
+.nav-ham input:checked~ul {
+    display: block;
+    border: none;
+}
+
+.nav-ham input~ul {
+    border: 3px solid #f7d547;
+    display: none;
+}
+
+.nav-ham label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid #f7d547;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+}
+
+.nav-ham ul {
+    z-index: 2;
+    position: absolute;
+    background-color: black;
+    padding: 0;
+}
+
+.nav-ham ul li {
+    display: block;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+}
+
+.nav-ham ul a {
+    list-style: none;
+    text-decoration: none;
+    color: #f7d547;
+
+}
+
+.nav-ham-container {
+    width: 86px;
+}
+
+/* MAIN */
+.productos-de-portada {
     background-image: url(../assets/Fondos/fondo-geometrico-abstracto-premium-negro-oro_1017-24783.webp);
     background-size: 100%;
     background-position: bottom;
     background-repeat: repeat-y;
     display: flex;
     justify-content: center;
-    align-items: center; }
-  
-  .img-portada {
-    display: flex;
-    padding: 150px;
-    width: 100%;
-    height: 100vh; }
-    .img-portada a img {
-      width: 90%; }
-  
-  .slider-item {
-    border-radius: 20px 50px;
+    align-items: center;
+    height: 100vh;
+}
+
+.carousel {
+    height: 629px;
+    width: 560px;
     padding: 3px;
-    margin: 20px;
-    box-shadow: 10px 10px 3px #f7d547; }
-  
-  .carousel {
-    width: 100%;
-    padding: 3px;
-    margin: 20px;
-    box-shadow: 10px 10px 3px #f7d547; }
-    .carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
-      filter: invert(108%); }
-  
-  footer {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.carousel .carousel-control-prev-icon,
+.carousel .carousel-control-next-icon {
+    filter: invert(108%);
+}
+
+
+
+/* FOOTER */
+footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -138,233 +175,322 @@
     height: 180px;
     color: #f7d547;
     text-align: center;
-    background-image: url(../assets/Fondos/marmol-negro-textura-fondo-textura-marmol-tailandia-marmol-natural-abstracto-blanco-negro-diseno_1253-917.webp); }
-  
-  .quienes-somos {
+    background-image: url(../assets/Fondos/marmol-negro-textura-fondo-textura-marmol-tailandia-marmol-natural-abstracto-blanco-negro-diseno_1253-917.webp);
+}
+
+/*  QUIENES-SOMOS */
+.quienes-somos {
     background-image: url(../assets/Fondos/fondo-geometrico-abstracto-premium-negro-oro_1017-24783.webp);
     background-size: 100%;
     background-position: bottom;
     color: #f7d547;
-    text-transform: uppercase; }
-  
-  .main-quienes {
+    text-transform: uppercase;
+}
+
+.main-quienes {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
-    text-align: center; }
-    .main-quienes p {
-      width: 50%;
-      margin: 10px; }
-    .main-quienes video {
-      width: 500px;
-      border-radius: 10%;
-      margin-top: 10px;
-      border: 2px #f7d547;
-      border-style: dotted; }
-  
-  .main-productos {
+    text-align: center;
+}
+
+.main-quienes p {
+    width: 50%;
+    margin: 10px;
+}
+
+.main-quienes video {
+    width: 500px;
+    border-radius: 10%;
+    margin-top: 10px;
+    border: 2px #f7d547;
+    border-style: dotted;
+}
+
+/* PRODUCTOS */
+.main-productos {
     background-image: url(../assets/Fondos/fondo-geometrico-abstracto-premium-negro-oro_1017-24783.webp);
     background-size: 100%;
     background-position: bottom;
-    height: 100vh; }
-  
-  button a {
-    text-decoration: none; }
-  
-  .button {
+    height: 100vh;
+}
+
+button a {
+    text-decoration: none;
+}
+
+.button {
     background-color: #f7d547;
     width: 200px;
     height: 100px;
     border-radius: 99px 99px 99px 99px;
     -webkit-border-radius: 99px 99px 99px 99px;
-    -moz-border-radius: 99px 99px 99px 99px; }
-  
-  .div-button {
+    -moz-border-radius: 99px 99px 99px 99px;
+}
+
+.div-button {
     display: flex;
     justify-content: center;
-    padding-top: 20%; }
-  
-  .main-servicios {
+    padding-top: 20%;
+}
+
+/* SERVICIOS */
+.main-servicios {
     background-image: url(../assets/Fondos/fondo-geometrico-abstracto-premium-negro-oro_1017-24783.webp);
     background-size: 100%;
     background-position: bottom;
-    color: #f7d547; }
-  
-  .section-servicios {
-    display: flex;
-    justify-content: center;
-    padding-top: 100px;
+    background-repeat: repeat-y;
+    color: #f7d547;
     text-align: center;
-    height: 100vh; }
-    .section-servicios img {
-      border-radius: 20px 50px;
-      padding: 3px;
-      margin: 10px;
-      box-shadow: 10px 10px 3px #f7d547; }
-  
-  .main-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* CONTACTOS */
+
+.main-contacto {
     background-image: url(../assets/Fondos/fondo-geometrico-abstracto-premium-negro-oro_1017-24783.webp);
     background-size: 100%;
     background-position: bottom;
-    height: 100vh; }
-  
-  .formulario {
+    height: 100vh;
+}
+
+.formulario {
     padding-top: 30px;
-    color: #f7d547; }
-  
-  .ingreso {
+    color: #f7d547;
+}
+
+.ingreso {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px; }
-    .ingreso label {
-      font-size: 20px;
-      border: 1px solid #f7d547;
-      background-color: black;
-      margin: 5px; }
-    .ingreso .label-pas {
-      display: none; }
-    .ingreso input {
-      text-align: center;
-      height: 50px;
-      width: 300px; }
-    .ingreso button {
-      height: 50px;
-      width: 300px;
-      background-color: #f7d547;
-      font-weight: 100;
-      font-family: "Playfair Display", serif; }
-    .ingreso textarea {
-      height: 100px;
-      width: 300px; }
-  
-  .logos {
+    gap: 10px;
+}
+
+.ingreso label {
+    font-size: 20px;
+    border: 1px solid #f7d547;
+    background-color: black;
+    margin: 5px;
+}
+
+.ingreso .label-pas {
+    display: none;
+}
+
+.ingreso input {
+    text-align: center;
+    height: 50px;
+    width: 300px;
+}
+
+.ingreso button {
+    height: 50px;
+    width: 300px;
+    background-color: #f7d547;
+    font-weight: 100;
+    font-family: "Playfair Display", serif;
+}
+
+.ingreso textarea {
+    height: 100px;
+    width: 300px;
+}
+
+.logos {
     display: flex;
-    justify-content: center; }
-    .logos img {
-      height: 30px;
-      width: 30px;
-      display: flex;
-      margin: 10px; }
-  
-  @media (max-width: 768px) and (min-width: 320px) {
+    justify-content: center;
+}
+
+.logos img {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    margin: 10px;
+}
+
+/* BREAKPOINT */
+@media (max-width: 768px) and (min-width: 320px) {
     header {
-      height: 180px; }
+        height: 180px;
+    }
+
     .titulo-casa {
-      font-size: 40px;
-      letter-spacing: 4px;
-      padding-top: 50px; }
+        font-size: 40px;
+        letter-spacing: 4px;
+        padding-top: 50px;
+    }
+
+
+
+
     .site-logo-img {
-      display: none; }
+        display: none;
+    }
+
     .subtitulo {
-      display: none; }
+        display: none;
+    }
+
     .inputSearch {
-      display: none; }
+        display: none;
+    }
+
     .nav-bar {
-      display: none; }
+        display: none;
+    }
+
     .nav-ham {
-      display: block;
-      padding-top: 30px;
-      color: #f7d547; }
+        display: block;
+        padding-top: 30px;
+        color: #f7d547;
+
+    }
+
     .search-icon {
-      display: flex;
-      justify-content: flex-end; }
-      .search-icon a {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .search-icon a {
         position: relative;
         width: 86px;
-        bottom: 30px; }
-      .search-icon img {
+        bottom: 30px;
+    }
+
+    .search-icon img {
         width: 30px;
         height: 30px;
         border: 1px solid #f7d547;
-        border-radius: 5px; }
-    .img-portada {
-      display: inline;
-      flex-direction: column;
-      padding: 0%; }
+        border-radius: 5px;
+    }
+
+
+
     footer {
-      font-size: 20px; }
+        font-size: 20px;
+    }
+
     .main-quienes video {
-      width: 250px;
-      margin-top: 100px; }
-    .section-servicios {
-      display: inline;
-      flex-direction: column; }
-    .carousel img {
-      height: 400px; } }
-  
-  @media (max-width: 320px) and (min-width: 0px) {
+        width: 250px;
+        margin-top: 100px;
+    }
+
+
+
+
+}
+
+@media (max-width: 320px) and (min-width: 0px) {
     header {
-      background-repeat: no-repeat; }
+        background-repeat: no-repeat;
+        height: 100px;
+    }
+
+    .carousel-inner .carousel-item img {
+        height: 300px;
+    }
+
     .titulo-casa {
-      font-size: 10px;
-      letter-spacing: 4px;
-      padding-top: 50px; }
+        font-size: 20px;
+        letter-spacing: 4px;
+        padding-top: 50px;
+    }
+
     .site-logo-img {
-      display: none; }
+        display: none;
+    }
+
     .subtitulo {
-      display: none; }
+        display: none;
+    }
+
     .inputSearch {
-      display: none; }
+        display: none;
+    }
+
     .nav-bar {
-      display: none; }
+        display: none;
+    }
+
     .nav-ham {
-      display: block;
-      display: flex;
-      margin-top: 40px;
-      color: #f7d547; }
+        display: block;
+        display: flex;
+        margin-top: 40px;
+        color: #f7d547;
+    }
+
     .search-icon {
-      display: flex;
-      justify-content: flex-end; }
-      .search-icon a {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .search-icon a {
         position: relative;
         width: 86px;
-        bottom: 30px; }
-      .search-icon img {
+        bottom: 30px;
+    }
+
+    .search-icon img {
         width: 30px;
         height: 30px;
         border: 1px solid #f7d547;
-        border-radius: 5px; }
-    .img-portada {
-      display: inline;
-      flex-direction: column;
-      padding: 0; }
-      .img-portada a img {
-        width: 30px;
-        height: 30px; }
+        border-radius: 5px;
+    }
+
+
     footer {
-      height: 50px;
-      font-size: 10px; }
+        height: 50px;
+        font-size: 10px;
+    }
+
     .main-quienes video {
-      width: 250px;
-      margin-top: 100px; }
+        width: 250px;
+        margin-top: 100px;
+    }
+
     .section-servicios {
-      padding: 0;
-      flex-direction: column; }
+        padding: 0;
+        flex-direction: column;
+    }
+
     .ingreso {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px; }
-      .ingreso label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .ingreso label {
         font-size: 20px;
         border: 1px solid #f7d547;
         background-color: black;
-        margin: 5px; }
-      .ingreso .label-pas {
-        display: none; }
-      .ingreso input {
+        margin: 5px;
+    }
+
+    .ingreso .label-pas {
+        display: none;
+    }
+
+    .ingreso input {
         text-align: center;
         height: 50px;
-        width: 150px; }
-      .ingreso button {
+        width: 150px;
+    }
+
+    .ingreso button {
         height: 50px;
         width: 150px;
         background-color: #f7d547;
         font-weight: 100;
-        font-family: "Playfair Display", serif; }
-      .ingreso textarea {
+        font-family: "Playfair Display", serif;
+    }
+
+    .ingreso textarea {
         height: 100px;
-        width: 150px; } }
-  
+        width: 150px;
+    }
+}
