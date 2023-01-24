@@ -1,0 +1,52 @@
+$color_1: #f7d547;
+$background-color_1: #f7d547;
+.main-contacto {
+	@include background;
+	height: 100vh;
+}
+.formulario {
+	padding-top: 30px;
+	color: $color_1;
+}
+.ingreso {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	label {
+		font-size: 20px;
+		border: 1px solid $color_1;
+		background-color: black;
+		margin: 5px;
+	}
+	.label-pas {
+		display: none;
+	}
+	input {
+		text-align: center;
+		height: 50px;
+		width: 300px;
+	}
+	button {
+		height: 50px;
+		width: 300px;
+		background-color: $color_1;
+		font-weight: 100;
+		font-family: $tipografia-secundaria;
+	}
+	textarea {
+		height: 100px;
+		width: 300px;
+	}
+}
+.logos {
+	display: flex;
+	justify-content: center;
+
+	img {
+		height: 30px;
+		width: 30px;
+		display: flex;
+		margin: 10px;
+	}
+}

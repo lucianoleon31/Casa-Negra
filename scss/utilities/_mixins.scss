@@ -1,0 +1,14 @@
+// este mixin aplica dos veces una para footer y para main-quienes
+@mixin flex ($uno, $dos, $tres) {
+    display: flex;
+    flex-direction: $uno;
+    justify-content: $dos;
+    align-items: $tres;
+}
+
+// con este mixin declaros todos los fondos de las pages
+@mixin background {
+    background-image: url(../assets/Fondos/fondo-geometrico-abstracto-premium-negro-oro_1017-24783.webp);
+    background-size: 100%;
+    background-position: bottom;
+}

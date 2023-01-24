@@ -1,0 +1,122 @@
+header {
+	color: $color_1;
+	list-style: none;
+	text-align: center;
+	background-position-y: center;
+	background-size: 100%;
+	background-image: url(../assets/Fondos/lujoso-fondo-marco-dorado-brillante_23-2148239824.webp);
+	font-family: $tipografia-principal;
+}
+
+.titulo-casa {
+	font-family: $tipografia-secundaria;
+	font-size: 80px;
+	letter-spacing: 20px;
+	font-weight: 100;
+	text-shadow: 2px 2px 2px grey;
+}
+
+.inputSearch {
+	display: flex;
+	justify-content: end;
+	height: 30px;
+	margin: 20px 10px;
+
+	input {
+		border-radius: 10%;
+	}
+
+	input::placeholder {
+		font-family: $tipografia-principal;
+
+	}
+
+	label {
+		margin: 5px;
+		font-family: $tipografia-secundaria;
+	}
+}
+
+.search-icon {
+	display: none;
+}
+
+.nav-bar {
+	background-image: url(../assets/Fondos/marmol-negro-textura-fondo-textura-marmol-tailandia-marmol-natural-abstracto-blanco-negro-diseno_1253-917.webp);
+	padding: 20px 12px;
+	font-size: 20px;
+	font-weight: 100px;
+	display: flex;
+	justify-content: space-around;
+	border-top: 2px solid $color_2;
+	border-bottom: 2px solid $color_2;
+	text-shadow: 2px 2px 2px grey;
+}
+
+a.menu-item {
+	margin-right: 24px;
+	color: $color_1;
+	text-decoration: none;
+	font-weight: 800;
+
+	&:hover {
+		color: $color_2;
+	}
+}
+
+.nav-ham {
+	display: none;
+	max-width: 86px;
+
+	input {
+		&:checked~ul {
+			display: block;
+			border: none;
+		}
+
+		display: none;
+	}
+
+	input~ul {
+		border: 3px solid $color_2;
+		display: none;
+	}
+
+	label {
+		box-sizing: border-box;
+		display: inline-block;
+		border: 1px solid $color_2;
+		border-radius: 5px;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		font-weight: bold;
+		text-align: center;
+		user-select: none;
+	}
+
+	ul {
+		z-index: 2;
+		position: absolute;
+		background-color: $background-color_1;
+		padding: 0;
+
+		li {
+			display: block;
+			margin: 0;
+			padding: 10px;
+			list-style: none;
+			border-bottom: 1px solid grey;
+		}
+
+		a {
+			list-style: none;
+			text-decoration: none;
+			color: $color_2;
+		}
+	}
+}
+
+.nav-ham-container {
+	width: 86px;
+}
