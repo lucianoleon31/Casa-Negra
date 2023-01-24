@@ -1,0 +1,29 @@
+$color_1: #f7d547;
+
+.quienes-somos {
+	@include background;
+	color: $color_1;
+	text-transform: uppercase;
+}
+
+// en el footer incluimos el mixin flex con las propiedades de direccion justificado y alineado
+.main-quienes {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	text-align: center;
+
+	p {
+		width: 50%;
+		margin: 10px;
+	}
+
+	video {
+		width: 500px;
+		border-radius: 10%;
+		margin-top: 10px;
+		border: 2px #f7d547;
+		border-style: dotted;
+	}
+}

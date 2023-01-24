@@ -1,0 +1,20 @@
+.main-portada {
+	@include background;
+	background-repeat: repeat-y;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.div-portada {
+	height: 560px;
+	width: 629px;
+	padding: 3px;
+	font-family: $tipografia-principal;
+
+	.carousel .carousel-control-prev-icon,
+	.carousel .carousel-control-next-icon {
+		filter: invert(108%);
+	}
+}

@@ -1,0 +1,26 @@
+$color_1: #f7d547;
+
+
+	.main-servicios {
+		@include background;
+		background-repeat: repeat-y;
+		color: #f7d547;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		.div-servicios{
+			height: 629px;
+			width: 560px;
+			padding: 3px;
+			font-family: $tipografia-principal;
+			.carousel .carousel-control-prev-icon,
+			.carousel .carousel-control-next-icon {
+				filter: invert(108%);
+			}
+			
+		}
+	}
+	
+	

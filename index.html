@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,17 +16,18 @@
     <meta property="og: image" content="https://lucianofox.000webhostapp.com/assets/hydra.jpg">
     <meta property="og: url" content="https://lucianofox.000webhostapp.com/">
     <meta property="locale" content="es_Es">
+    <!-- Todos los title con descripcion -->
     <title>Home | Casa Negra</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="shortcut icon" href="../assets/Sin título.jpg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <!-- En el head agregue el icono que se muestra en las pestañas del explorador(hice un logo pero no llegue a modificar la resolucion) -->
+    <!-- En el head agregue el icono que se muestra en las pestañas del explorador(hice un logo pero no llegue a modificar la resolucion). Agregue el Link de bootstrap para el carousel -->
 </head>
 
 <body>
     <!-- La pagina esta orientada a un producto de cosmetica, principalmente para el bronceado -->
-    <!-- Hice un header con el titulo, el logo y un slogan, le agregue imagenes a los fondos, tiene un fondo para la parte de texto y otro para la nav-bar y un imput con una barra de busqueda -->
+    <!-- Hice un header con el titulo, el logo y un slogan, le agregue imagenes a los fondos, tiene una imagen de fondo para el header y otra para la nav-bar y un imput con una barra de busqueda -->
     <header>
         <div class="site-header">
             <h1 class="titulo-casa">•CASANEGRA•</h1>
@@ -47,8 +48,7 @@
                 <a class="menu-item" href="./pages/contacto.html"><span>Contacto</span></a>
             </nav>
         </section>
-
-        <!-- aca agregue la nav-ham para el sistema MOBILE -->
+        <!-- aca agregue la nav-ham para el sistema MOBILE con un icon ☰ -->
         <div class="nav-ham">
             <nav class="nav-ham-container">
                 <input type="checkbox" id="menu">
@@ -76,13 +76,12 @@
         <div class="search-icon">
             <a href=""><img src="./assets/icon/busqueda.png" alt=""></a>
         </div>
-
     </header>
-    <!-- Este main  destaca los 3 productos principales.  Le cambie los bordes y le agregue unas sombras, que repito en las imagenes del sitio. utilice otra imagen para el fondo. 
-    Y en todos las paginas los main son distintos y tienen distintos atributos en css (trate de ser lo mas ordenado con la maquetacion)
+    <!-- Este main  destaca los 3 productos principales.  Le cambie los bordes que tenia y deje solo las imagenes.
+    Y en todos las paginas los main tienen su propio contenido.
     En este ultimo cambio le agregue un carrusel con bootstrap, igual que en la pagina de servicios -->
-    <main>
-        <div class="productos-de-portada">
+    <main class="main-portada">
+        <div class="div-portada">
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -94,7 +93,8 @@
                     <div class="carousel-item">
                         <img src="./assets/rmove.jpg" class="d-block w-100" alt="...">
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -104,13 +104,10 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-                </div>
-                
             </div>
         </div>
     </main>
-    <!-- el footer simplemente muestra los datos de la casa centrados y alineado exepruando el footer de contactos que lo cambio por la fila de iconos de redes sociales-->
-    <!-- estuve viendo la posibilidad de gregarle una barra con los iconos de las plataformas y redes sociales pero no llegue sera para la proxima -->
+    <!-- el footer simplemente muestra los datos de la casa, centrados y alineado exepruando el footer de contactos que lo cambio por la fila de iconos de redes sociales-->
     <footer>
         <div class="text-footer">
             <p>
@@ -118,6 +115,7 @@
             </p>
         </div>
     </footer>
+    <!-- los script de bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
@@ -125,7 +123,6 @@
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
 </body>
-<!--  -->
-<!--  -->
+
 
 </html>

@@ -1,0 +1,10 @@
+// en el footer incluimos el mixin flex con las propiedades de direccion justificado y alineado y una variable de tipografia.
+footer {
+    @include flex( row, center, center);
+    font-family: $tipografia-principal;
+    font-size: 25px;
+    height: 180px;
+    color: #f7d547;
+    text-align: center;
+    background-image: url(../assets/Fondos/marmol-negro-textura-fondo-textura-marmol-tailandia-marmol-natural-abstracto-blanco-negro-diseno_1253-917.webp);
+}
