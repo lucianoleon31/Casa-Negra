@@ -10,5 +10,6 @@
 @mixin background {
     background-image: url(../assets/Fondos/fondo-geometrico-abstracto-premium-negro-oro_1017-24783.webp);
     background-size: 100%;
-    background-position: bottom;
+    background-position: center;
+    padding: 20px;
 }
